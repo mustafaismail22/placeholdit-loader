@@ -29,10 +29,10 @@ Or
 ``` javascript
 
 var fileAsBase64Src = require("base64-image!placeholdit!./file.png");
-document.write('<img src="' + fileAsBase64Src + '" />';
+document.write('<img src="' + fileAsBase64Src + '" />');
 
-var fileUrl = require("file!placeholdit!./file-2.png");
-document.write('<img src="' + fileUrl + '" />';
+var fileUrl = require("file!placeholdit!./file-2.gif");
+document.write('<img src="' + fileUrl + '" />');
 
 ```
 

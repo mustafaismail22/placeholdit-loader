@@ -5,3 +5,4 @@ npm-debug.log*
 .idea
 *.sublime-workspace
 *.sublime-project
+example/build

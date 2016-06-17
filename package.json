@@ -1,10 +1,10 @@
 {
   "name": "placeholdit-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack --progress --colors --config ./example/webpack.config.js"
   },
   "author": "Mustafa Ismail",
   "license": "ISC",
@@ -16,7 +16,11 @@
     "object-assign": "^4.1.0",
     "request": "^2.72.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "base64-image-loader": "^1.0.0",
+    "file-loader": "^0.8.5",
+    "webpack": "^1.13.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mustafaismail22/placeholdit-loader.git"
