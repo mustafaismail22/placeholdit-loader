@@ -1,7 +1,7 @@
 {
   "name": "placeholdit-loader",
   "version": "0.0.4",
-  "description": "",
+  "description": "Placehold.it loader for webpack",
   "main": "index.js",
   "scripts": {
     "test": "webpack --progress --colors --config ./example/webpack.config.js"
@@ -28,5 +28,20 @@
   "bugs": {
     "url": "https://github.com/mustafaismail22/placeholdit-loader/issues"
   },
-  "homepage": "https://github.com/mustafaismail22/placeholdit-loader#readme"
+  "homepage": "https://github.com/mustafaismail22/placeholdit-loader#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "placeholdit",
+    "placeholder",
+    "placehold.it",
+    "dummy image",
+    "fake images",
+    "webpack",
+    "loader",
+    "images",
+    "image",
+    "img"
+  ]
 }

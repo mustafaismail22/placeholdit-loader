@@ -12,21 +12,30 @@ npm install --save-dev placeholdit-loader
 
 ``` javascript
 
-loaders: [
-    {
-        test: /\.(jpe?g|png|gif)$/i,
+// ./webpack.config.js
+
+module.exports = {
+    ...
+    module: {
         loaders: [
-            'file-loader?name=[name]-[hash:6].[ext]',
-            'placeholdit-loader?bypassOnDebug=false'
+            {
+                test: /\.(jpe?g|png|gif)$/i,
+                loaders: [
+                    'file-loader?name=[name]-[hash:6].[ext]',
+                    'placeholdit-loader?bypassOnDebug=false'
+                ]
+            }
         ]
     }
-]
+}
 
 ```
 
 Or
 
 ``` javascript
+
+// ./example.js
 
 var fileAsBase64Src = require("base64-image!placeholdit!./file.png");
 document.write('<img src="' + fileAsBase64Src + '" />');
